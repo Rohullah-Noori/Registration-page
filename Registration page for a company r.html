@@ -1,0 +1,207 @@
+<html>
+<head>
+    <meta charset="ut-f8">
+<style type="text/css">
+    body{
+        margin: 0;
+    }
+div#one{
+    position: relative;
+    width:100%;
+    height:100%;
+    background-image: url(f.jpg);
+    background-repeat:no-repeat;
+    background-size:100%;
+}
+    @-webkit-keyframes myani{
+        from{margin-left: 0}
+        to{margin-left: 800px;
+        }
+    }
+    #animation{
+        -webkit-animation:myani 3s;
+width: 60px;
+height: 60px;
+position: relative;
+top: 20px;
+border-radius: 55px;
+cursor: pointer;
+}#animation:hover{
+    animation: sh 7s linear 1s  3  alternate both;
+}
+
+
+div#two{
+    margin: 0 auto;
+    width:600px;
+    height:400px;
+    background-color:white;
+    z-index:0.5%;
+    position: relative;
+    top: 150px;
+    right: 200px;
+    border-top-right-radius:60px;
+    border-bottom-right-radius:60px;
+    box-shadow: 5px 5px 5px rgb(100, 100, 231);
+}#b{position: relative;
+    top: 10px;
+    left: 10px;
+    width:220px;
+    height:30px;
+    background-color: lightblue;
+border-radius: 20px;
+}#oneb,#twob{
+    width:100px;
+    height:25px;
+    border-radius: 20px;
+    margin:3px 4px;
+    border: none;
+    background:none;
+    cursor: pointer;
+}a:hover{
+    text-decoration:none;
+}#oneb{
+    background: white;
+}
+#oneb:hover{
+    background:white;
+}#twob:hover{
+    background:white;
+}#p{
+    font-size:30px;
+    color: gray;
+    text-align: center;
+    font-family: Georgia, 'Times New Roman', Times, serif;
+
+}#name,#family-name,#password,#retype-password,#email,#phone-number,#security-question,#answer{
+    width:250;
+    margin-left: 30px;
+    margin-top: 10px ;
+    nowrap:"type";
+    font-size: 15px;
+    font-family: Georgia, 'Times New Roman', Times, serif;
+    text-align: right;
+}
+
+
+
+
+
+
+
+
+
+
+
+
+#o{
+   position: relative;
+   left: 400px;
+}#ok{
+    width: 100px;
+    height: 40px;
+    background: lightblue;
+    border-radius: 30px;
+color:black;
+font-size:medium;
+margin-left:15px;
+
+}
+#ok:hover{
+    background: white;
+    cursor: pointer;
+}
+
+
+#par{
+    position: relative;
+    float: left;
+    top:300px;
+    left:800px;
+    text-align: center; 
+    color: white;   
+   
+}#par:hover{
+    transition:0.8s;
+    translate:rotate(15px); 
+}
+#w{
+    font-size: x-large;
+    font-weight: 600;
+}#we{
+    font-size: medium;
+    font-weight: 600;
+    float: left;
+    position: relative;
+    bottom: 60px;
+
+}#enter{
+    position: relative;
+    top:450px;
+    left:650px;
+    width: 150px;
+    padding: 4px;
+    height: 30px;
+    border: 2px solid gray;
+    border-radius:30px;
+    float:left;
+    font-size:15px;
+    font-weight:30%;
+    background:lightgray ;
+    
+}#enter:hover{
+    background: honeydew;
+    cursor: pointer;
+}#security-question{
+    color: gray;
+}
+.gray{
+    color:black;
+}
+</style>
+</head>
+<body>
+    <div id="one">
+        <img src="sh.ico" id="animation">
+        <div id="par">
+       <p id="w">خوش آمدید </p><br><br>
+        <p id="we">تنها در چند ثانیه <br>
+                        در سایت ما ثبت نام کنید</p>
+        </div>
+      <input id="enter" type="text" value="ورود به ناحیه کاربردی">
+        <div id="two">
+            <div id="b">
+                <a href="example css.html"><input id="oneb" type="submit" value="مشتری"></a>
+                <a href="example css.html"><input id="twob" type="submit" value="نمایتدگی"></a>
+            </div>
+            <p id="p">ثبت نام مشتری</p>
+            <input id="family-name" type="text" placeholder="نام خانودگی تان رو وارد کنید">
+            <input id="name" type="text" placeholder="نام خود را وارد کنید">
+            <input id="retype-password" type="password" placeholder="تکرار رمز عبور">
+            <input id="password" type="password" placeholder="رمز ورد تان رو وارد کنید">
+            <input id="phone-number" type="text" placeholder=" شماره تماس خود را وارد کنید">
+
+            <input id="email" type="text" placeholder="ایمل خود را وارد کنید">
+            
+            <input id="answer"type="text" placeholder=" جواب تان را وارد کنید">
+  
+            <select name="list" id="security-question">
+            <option value="place-holder" class="black">سوال امیتی تان را انتخاب کنید</option>
+           <option value="birthday" class="black"> سال تولد تان چند است؟</option>
+           <option value="country" class="black"> کشور مورد علاقه تان کدام است؟</option>
+           <option value="grade" class="black"> درجه چندم درسی  هستید؟</option>
+            </select>
+
+
+
+            <br>
+            <div id="o">
+                <form>
+                                    مذکر <input type="radio" name="sex" value="male">
+                   مونث <input type="radio" name="sex" value="female">
+                </form></div>
+                <a href="example css.html"><input id="ok" type="submit" name="button" value="عضویت"></a>
+        </div>
+    </div>
+</body>
+</html>
